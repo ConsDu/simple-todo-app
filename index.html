@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>My TODOs</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="" class="nav-brand">My TODOs App</a>
+      <ul>
+        <li class="nav-item"><a href="#top">About us</a></li>
+        <li>
+          <a href="#top" class="nav-item btn btn-default">Register</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="container" id="main">
+      <h1>Todo List</h1>
+      <p>Input your tasks and chose a category</p>
+
+      <form id="todo-form">
+        <label for="todo-title"></label>
+        <input
+          id="todo-title"
+          type="text"
+          placeholder="Enter your todo"
+          required
+        />
+        <select id="todo-category">
+          <option value="work">Work</option>
+          <option value="personal">Personal</option>
+        </select>
+        <input type="submit" class="btn btn-outline" value="Add" />
+        <input type="button" id="reset" class="btn btn-outline" value="Reset" />
+      </form>
+      <hr class="separator" />
+      <div>
+        <label>
+          Filter:
+          <select id="todo-filter">
+            <option value="">Show all</option>
+            <option value="work">Work only</option>
+            <option value="personal">Personal only</option>
+          </select>
+        </label>
+        <h3>Todos <span id="todo-count"></span></h3>
+        <ul id="todo-list"></ul>
+      </div>
+    </main>
+
+    <footer id="footer-wrapper">
+      <a href="#top">About us</a>
+      <a href="#top">Contact us</a>
+    </footer>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
