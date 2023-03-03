@@ -20,4 +20,4 @@ I've built this simple TODO app in order to get familiar with Javascript classes
 
 ## Demo
 
-Insert link to demo here
+[TODO App](https://bespoke-alfajores-2a8e94.netlify.app)
